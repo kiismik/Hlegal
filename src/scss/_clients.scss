@@ -1,0 +1,88 @@
+.clients{
+	@media screen and (min-width: $breakpoint-xxl) {
+		padding:  0px 100px;
+		margin-bottom: 60px;
+	}
+	h2 {
+        color: $main-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 30px 0px;
+
+    }
+	&__items{
+		display: flex;
+		flex-wrap:wrap ;
+	
+	}
+	&__items div{
+		display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        @media screen and (min-width: $breakpoint-md) {
+            width: 33.333333%;
+        }
+	}
+	.clients__item {
+		
+		
+	}
+	.client_1 {
+		padding: 36px 106px 36px 107px;
+        background: #1c4280;
+		
+	}
+	.client_2 {
+		padding: 44px 88px;
+        background: #143646;
+	}
+	.client_3 {
+		padding: 38px 98px;
+        background: #f48b30;
+	}
+	.client_4 {
+		padding: 38px 98px;
+        background: #9e4dc3;
+	}
+	.client_5 {
+		padding: 38px 101px;
+        background: #fd9339;
+	}
+	.client_6 {
+		padding: 36px 90px;
+        background: #e2e2e4;
+	}
+	.client_7 {
+		padding: 29px 59px;
+        background: #c71c36;
+	}
+	.client_8 {
+		padding: 22px 55px;
+        background: #dcf3f9;
+	}
+	.client_9 {
+		padding: 30px 37px;
+        background: #eaeaea;
+	}
+	.client_10 {
+		padding: 41px 38px;
+        background: #282240;
+	}
+	.client_11 {
+		padding: 37px 33px;
+        background: #1d4568;
+	}
+	.client_12 {
+		padding: 13px 52px;
+        background: #000;
+	}
+	.client_7,.client_8,.client_9,.client_10,.client_11,.client_12{
+		position: absolute;
+
+		@media screen and (min-width: $breakpoint-md) {
+            position: static;
+        }
+	}
+}

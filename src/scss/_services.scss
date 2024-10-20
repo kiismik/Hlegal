@@ -1,0 +1,94 @@
+.services {
+    padding: 60px 0;
+    overflow-x: hidden;
+    position: relative;
+    
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 60px 0;
+  }
+  &__container{
+    @media screen and (min-width: $breakpoint-lg) {
+        
+      }
+  }
+  // &__services-arrow{
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 2px;
+  // }
+  // &__services{
+  //   text-transform: uppercase;
+  //   font-weight: 700;
+  //   letter-spacing: 1px;
+  //   color: $regular-color;
+  //   text-decoration: none;
+   
+  // }
+  
+  
+  &__content-title{
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 10px;
+    @include gradient-text($gradient-red-text)
+   
+  }
+  &__cards{
+    margin: 60px 0;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+   
+  }
+  &__card{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    @media screen and (min-width: $breakpoint-md) {
+      flex: 1 1 40%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 28%;
+    }
+    &__title{
+        padding: 44px 0 15px;
+        color: $regular-color;
+        font-size: 22px;
+        font-weight: 700;
+       
+      }
+      &__desc{
+        font-size: 16px;
+        color: $basic-white;
+       
+      }
+      &__img{
+        width: 92px;
+        height: 92px;
+      }
+      .img1{
+        background: url('../img/icons/Icon1.svg') ; 
+      }
+      .img2{
+        background: url('../img/icons/Icon2.svg') ; 
+      }
+      .img3{
+        background: url('../img/icons/Icon3.svg') ; 
+      }
+      .img4{
+        background: url('../img/icons/Icon4.svg') ; 
+      }
+      .img5{
+        background: url('../img/icons/Icon5.svg') ; 
+      }
+      .img6{
+        background: url('../img/icons/Icon6.svg') ; 
+      }
+      
+  }
+  
+  
+  
+}

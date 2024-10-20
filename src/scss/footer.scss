@@ -1,0 +1,100 @@
+.footer {
+  &--bg-gr {
+      background: $bg-color;
+  }
+
+  padding: 30px 0;
+  a {
+    color: $regular-color;
+	text-decoration: none;
+	transition: 0.2s;
+
+	&:hover {
+		color: $hover-coolor;
+	}
+
+	&:hover::before {
+		border-color: $accent-color;
+	}
+  }
+  .tel_footer {
+      color: $alt-color;
+  }
+
+  .footer-box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 30px;
+      @media screen and (min-width: $breakpoint-md) {
+          flex-direction: row;
+          text-align: start;
+          flex-wrap: wrap;
+      }
+  }
+
+  .fot_first,
+  .fot_second,
+  .cop {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (min-width: $breakpoint-md) {
+          flex-direction: row;
+          text-align: start;
+          justify-content: start;
+      }
+  }
+  .fot_first {
+      gap: 10px;
+      flex: 1 1 50%;
+      align-items: center;
+      .map {
+          font-size: 12px;
+      }
+  }
+
+  .fot_second {
+      margin-top: 21px;
+      gap: 10px;
+      align-items: center;
+      @media screen and (min-width: $breakpoint-md) {
+          order: 1;
+      }
+  }
+  .cop {
+      margin-top: 30px;
+      color: $text-color;
+      @media screen and (min-width: $breakpoint-md) {
+          margin: 0;
+          justify-content: end;
+          flex: 1 1 50%;
+      }
+  }
+  .facebook {
+      width: 38px;
+      height: 38px;
+      margin: 0 auto;
+      border-radius: 50%;
+  }
+
+  .footer-line {
+      border: 2px solid $separator-color;
+  }
+  .map {
+      color: $regular-color;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+  .footer_email {
+      font-weight: 700;
+  }
+  .dotted {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $text-color;
+  }
+}

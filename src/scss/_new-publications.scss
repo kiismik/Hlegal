@@ -1,0 +1,139 @@
+.pub_container{
+  background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head{
+    background: none;
+    background-color: $bg-color;
+}
+@media screen and (min-width: $breakpoint-md){
+ 
+}
+.header{
+  
+    
+  
+  &__langs-link{
+    color: $text-color;
+    
+    &:hover {
+        background: $dop-accent-color;
+        color: $basic-white;
+      }
+  
+      &.active {
+        background: $dop-accent-color;
+        color: $basic-white;
+      }
+  } 
+  &__phone{
+    color: $text-color;
+  } 
+  &__box{
+    background-color: $basic-white;
+    display: flex;
+    gap: 4px;
+    justify-content:flex-start;
+    padding: 10px 0 15px;
+  }
+}
+.pub_container{
+    padding: 0 30px;
+    
+    &__switch{
+        margin-top: 30px;
+    }
+    &__switch input {
+        position: absolute;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    &__switch label {
+        display: flex;
+        width: 230px;
+        justify-content: center; /* Горизонтальное выравнивание */
+        align-items: center;
+        height: 38px;
+        border-radius: 12px;
+        position: relative;
+        cursor: pointer;
+        background: $separator-color
+    }
+    &__switch label::before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        width: 105px;
+        height: 36px;
+        background: $basic-white;
+        border-radius: 12px;
+        transition: all .3s linear;
+    }
+    &__switch input:checked+label::before {
+        left: calc(100% - 2px);
+        transform: translateX(-100%);
+    }
+    &__switch label span {
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__buttom{
+      background-color: $regular-color;
+      border-radius: 12px;
+      display: flex;
+      padding: 18px 30px;
+      justify-content: center;
+      color: $basic-white;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+    }
+    &__cards{
+
+
+    }
+    &__card{
+        &__img{
+
+        }
+        &__title{
+
+        }
+        &__date{
+
+        }
+        &__border{
+
+        }
+        &__decs{
+            
+        }
+    }
+}
+
